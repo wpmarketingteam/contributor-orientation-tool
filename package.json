@@ -14,6 +14,6 @@
   "author": "Aleksandar Predic",
   "license": "GPL-2.0+",
   "devDependencies": {
-    "@wordpress/scripts": "^23.7.2"
+    "@wordpress/scripts": "^26.7.0"
   }
 }
