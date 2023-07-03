@@ -220,6 +220,16 @@ export default class Form {
 		this.steps.removeClass(this.stepsActiveClass);
 		this.steps.eq(section.index()).addClass(this.stepsActiveClass);
 
+		// Accessibility improvement for steps.
+
+		let currentStep = document.getElementsByClassName(this.stepsActiveClass)[0];
+
+		document
+			.querySelector('[aria-current="page"]')
+			.removeAttribute("aria-current");
+
+		currentStep.setAttribute("aria-current", "page");
+
 	}
 
 	/**

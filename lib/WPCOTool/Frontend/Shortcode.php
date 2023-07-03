@@ -389,9 +389,9 @@ class Shortcode {
 					</span>
 					<span class="%5$s">%4$d</span>
 				</li>',
-				$i === 1 ? sprintf( ' class="%s"', sprintf( '%s__steps--active', $this->prefix ) ) : '', // %1$s
+				$i === 1 ? sprintf( ' aria-current="page" class="%s"', sprintf( '%s__steps--active', $this->prefix ) ) : '', // %1$s
 				sprintf( '%s__steps-text', $this->prefix ), // %2$s
-				sprintf( esc_html__( 'Step %d :', 'contributor-orientation-tool' ), $i ), // %3$s
+				sprintf( esc_html__( 'Step %d: ', 'contributor-orientation-tool' ), $i ), // %3$s
 				$i, // %4$d
 				sprintf( '%s__steps-responsive', $this->prefix ), // %5$d
 				$this->steps[ $i ] // %6$d
