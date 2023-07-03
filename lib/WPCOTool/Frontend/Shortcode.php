@@ -262,7 +262,7 @@ class Shortcode {
 
 	    return sprintf(
 		    '<section id="%1$s" class="%6$s%7$s">
-				<h3>%2$s</h3>
+				<h2>%2$s</h2>
 				<div class="%11$s">
 					%3$s
 					<div class="%9$s"></div>
@@ -341,7 +341,7 @@ class Shortcode {
 		return sprintf(
 			'<div class="%9$s">
 				<input id="%1$s" type="checkbox" name="%2$s[]" value="%3$s" />
-				<label for="%1$s"><a href="%7$s" title="%5$s" target="_blank">%4$s%5$s</a></label>
+				<label for="%1$s">%4$s%5$s</label>
 				<p>%6$s</p>
 				<a href="%7$s" title="%5$s" target="_blank">%8$s</a>
 			</div>',
