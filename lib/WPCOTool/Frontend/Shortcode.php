@@ -262,7 +262,7 @@ class Shortcode {
 
 	    return sprintf(
 		    '<section id="%1$s" class="%6$s%7$s">
-				<h3>%2$s</h3>
+				<h2>%2$s</h2>
 				<div class="%11$s">
 					%3$s
 					<div class="%9$s"></div>
@@ -341,7 +341,7 @@ class Shortcode {
 		return sprintf(
 			'<div class="%9$s">
 				<input id="%1$s" type="checkbox" name="%2$s[]" value="%3$s" />
-				<label for="%1$s"><a href="%7$s" title="%5$s" target="_blank">%4$s%5$s</a></label>
+				<label for="%1$s">%4$s%5$s</label>
 				<p>%6$s</p>
 				<a href="%7$s" title="%5$s" target="_blank">%8$s</a>
 			</div>',
@@ -389,9 +389,9 @@ class Shortcode {
 					</span>
 					<span class="%5$s">%4$d</span>
 				</li>',
-				$i === 1 ? sprintf( ' class="%s"', sprintf( '%s__steps--active', $this->prefix ) ) : '', // %1$s
+				$i === 1 ? sprintf( ' aria-current="page" class="%s"', sprintf( '%s__steps--active', $this->prefix ) ) : '', // %1$s
 				sprintf( '%s__steps-text', $this->prefix ), // %2$s
-				sprintf( esc_html__( 'Step %d :', 'contributor-orientation-tool' ), $i ), // %3$s
+				sprintf( esc_html__( 'Step %d: ', 'contributor-orientation-tool' ), $i ), // %3$s
 				$i, // %4$d
 				sprintf( '%s__steps-responsive', $this->prefix ), // %5$d
 				$this->steps[ $i ] // %6$d
