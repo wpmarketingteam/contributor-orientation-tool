@@ -39,6 +39,7 @@ return array(
 			'label' => esc_html__( 'Photography, video recording or processing', 'contributor-orientation-tool' ),
 			'teams' => array(
 				'tv',
+				'photos',
 			)
 		),
 		array(

@@ -32,7 +32,7 @@ return array(
 			)
 		),
 		array(
-			'label' => esc_html__( 'I\'m a content creator, blogger or marketeer', 'contributor-orientation-tool' ),
+			'label' => esc_html__( 'I\'m a content creator (photos, videos), blogger or marketeer', 'contributor-orientation-tool' ),
 			'teams' => array(
 				'support',
 				'community',
@@ -41,6 +41,7 @@ return array(
 				'marketing',
 				'tv',
 				'documentation',
+				'photos',
 			)
 		),
 		array(

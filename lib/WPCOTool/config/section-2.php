@@ -69,6 +69,8 @@ return array(
 				'training',
 				'tv',
 				'meta',
+				'photos',
+
 			)
 		),
 		array(
